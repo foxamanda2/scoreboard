@@ -1,17 +1,19 @@
 function main() {
   // Team 1 Add
   let scoreTeam1 = 0
-  if (scoreTeam1 <= 21) {
-    const addT1 = document.querySelector('.team1 fieldset i.add')
-    function plus1() {
+  const addT1 = document.querySelector('.team1 fieldset i.add')
+  function plus1() {
+    if (scoreTeam1 < 22) {
       const thingClickedOn = document.querySelector('.team1 h3')
+      scoreTeam1++
+      thingClickedOn.textContent = `${scoreTeam1}`
 
-      thingClickedOn.textContent = `${scoreTeam1++}`
+      if (scoreTeam1 === 21) {
+        window.alert(`Team 1 Won`)
+      }
     }
-    addT1.addEventListener('click', plus1)
-  } else {
-    console.log('You Won!')
   }
+  addT1.addEventListener('click', plus1)
   // Team 1 Subtract
   const subtractT1 = document.querySelector('.team1 fieldset i.subtract')
   function subtract1() {

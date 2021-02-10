@@ -58,3 +58,7 @@ fieldset i.add {
 fieldset i.subtract {
   color: #f64545;
 }
+.newGame {
+  background-color: goldenrod;
+  padding: 0px;
+}
