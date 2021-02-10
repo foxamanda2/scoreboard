@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -11,10 +13,10 @@ body {
   min-height: 100%;
   background-color: rgb(148, 190, 197);
   color: #3d4c69;
+  font-family: 'Pangolin', cursive;
 }
 h1 {
   text-align: center;
-  font-family: Monospace;
   margin: 1rem 0 3rem 0;
 }
 main {
@@ -38,7 +40,6 @@ section p {
 }
 section h3 {
   margin: 1rem 0;
-  font-family: Monospace;
   font-size: 3rem;
 }
 fieldset {
