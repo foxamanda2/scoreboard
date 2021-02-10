@@ -76,14 +76,16 @@ function main() {
     .addEventListener('input', updateListName2)
 
   // Reset score
-  const reset = document.querySelector('button.newGame')
+  const resetGame = document.querySelector('.newGame button')
   function newGame() {
     const team1Scores = document.querySelector('.team1 h3')
     const team2Scores = document.querySelector('.team2 h3')
     team1Scores.textContent = 0
+    scoreTeam1 = 0
     team2Scores.textContent = 0
+    scoreTeam2 = 0
   }
-  reset.addEventListener('click', newGame)
+  resetGame.addEventListener('click', newGame)
 }
 
 document.addEventListener('DOMContentLoaded', main)

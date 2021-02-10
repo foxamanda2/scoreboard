@@ -58,8 +58,13 @@ fieldset i.add {
 fieldset i.subtract {
   color: rgba(151, 126, 126, 0.952);
 }
-button.newGame {
+.newGame button {
   background-color: rgb(170, 177, 175);
   color: #3d4c69;
   padding: 0px;
+  width: 7rem;
+  height: 3rem;
+}
+section.newGame {
+  border: none;
 }
