@@ -9,7 +9,8 @@ function main() {
       thingClickedOn.textContent = `${scoreTeam1}`
     }
     if (scoreTeam1 === 21) {
-      return window.alert(`Team 1 Won`)
+      const name = document.querySelector('.team1 h2')
+      return window.alert(`${name.firstChild.data} Won`)
     }
   }
   addT1.addEventListener('click', plus1)
@@ -47,7 +48,8 @@ function main() {
       thingClickedOn.textContent = `${scoreTeam2}`
     }
     if (scoreTeam2 === 21) {
-      return window.alert(`Team 1 Won`)
+      const name = document.querySelector('.team2 h2')
+      return window.alert(`${name.firstChild.data} Won`)
     }
   }
   addT2.addEventListener('click', plus2)
@@ -80,8 +82,12 @@ function main() {
   function newGame() {
     const team1Scores = document.querySelector('.team1 h3')
     const team2Scores = document.querySelector('.team2 h3')
+    const name1Reset = document.querySelector('.team1 h2')
+    const name2Reset = document.querySelector('.team2 h2')
+    name1Reset.textContent = 'Team 1'
     team1Scores.textContent = 0
     scoreTeam1 = 0
+    name2Reset.textContent = 'Team 2'
     team2Scores.textContent = 0
     scoreTeam2 = 0
   }
