@@ -49,6 +49,8 @@ fieldset {
 }
 fieldset input {
   padding: 0.5rem;
+  background-color: rgb(170, 177, 175);
+  color: #2a3449;
 }
 fieldset i {
   margin: 0 0.2rem;
