@@ -71,3 +71,6 @@ fieldset i.subtract {
 section.newGame {
   border: none;
 }
+footer {
+  background-color: rgb(129, 155, 160);
+}
