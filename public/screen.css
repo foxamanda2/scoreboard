@@ -75,10 +75,10 @@ footer {
   background-color: rgb(129, 155, 160);
 }
 
-/* @media (min-width: 500px) {
+@media (min-width: 500px) {
   section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-} */
+}
