@@ -5,6 +5,7 @@ function main() {
   function plus1() {
     scoreTeam1++
     if (scoreTeam1 <= 21) {
+      scoreTeam1++
       const thingClickedOn = document.querySelector('.team1 h3')
       thingClickedOn.textContent = `${scoreTeam1}`
     }
@@ -22,7 +23,7 @@ function main() {
     if (scoreTeam1 === 0) {
       window.alert('You cant lose anymore than 0')
     }
-    if (scoreTeam1 > 0) {
+    if (scoreTeam1 > 0 || score < 21) {
       const thingClickedOn = document.querySelector('.team1 h3')
       scoreTeam1--
       thingClickedOn.textContent = `${scoreTeam1}`
@@ -44,8 +45,8 @@ function main() {
   let scoreTeam2 = 0
   const addT2 = document.querySelector('.team2 fieldset i.add')
   function plus2() {
-    scoreTeam2++
     if (scoreTeam2 <= 21) {
+      scoreTeam2++
       const thingClickedOn = document.querySelector('.team2 h3')
       thingClickedOn.textContent = `${scoreTeam2}`
     }
@@ -63,7 +64,7 @@ function main() {
     if (scoreTeam2 === 0) {
       window.alert('You cant lose anymore than 0')
     }
-    if (scoreTeam2 > 0) {
+    if (scoreTeam2 > 0 || score < 21) {
       const thingClickedOn = document.querySelector('.team2 h3')
       scoreTeam2--
       thingClickedOn.textContent = `${scoreTeam2}`
@@ -98,7 +99,7 @@ function main() {
     scoreTeam1 = 0
     win1Reset.textContent = ''
     // Team 2 Reset
-    name2Reset.empty
+    name2Reset.textContent = 'Team 2'
     team2Scores.textContent = 0
     scoreTeam2 = 0
     win2Reset.textContent = ''
